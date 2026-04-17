@@ -1,5 +1,8 @@
  import Navbar from './component/Navbar'
- import Studentmenu from './component/Studentmenu'
+ import Hero from './component/Hero'
+ 
+ 
+ 
 
 function App() {
   
@@ -7,9 +10,12 @@ function App() {
   return (
     <>
       <Navbar />
+      <Hero/>
       
+     
 
-      <Studentmenu  />
+      
+      
       
     </>
   )
