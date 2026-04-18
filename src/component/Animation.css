@@ -1,0 +1,43 @@
+@keyframes scrolldown {
+from{
+    transform: scale(0);
+    
+    margin-top: 0px;
+    opacity: 0.3;
+} 
+to
+{
+    transform: scale(1);
+     margin-top: 100px;
+     transform: scaleX(3);
+     transform: scaleY(3);
+     opacity: 1;
+}
+}
+@keyframes linedown{
+    from
+    {   background-color: rgb(98,73,197);
+        
+}
+to{
+         
+        background-color: #ff0000;
+     
+}
+
+}
+
+.transitAnimation li
+{
+    animation: scrolldown linear ;
+    animation-timeline: view();
+      animation-range: entry calc(10% + (var(--i) * 5%)) cover calc(40% + (var(--i) * 5%));
+}
+.transline1
+{
+animation: linedown linear;
+animation-timeline: view();
+animation-range: entry 0% cover 30%;
+ 
+
+}

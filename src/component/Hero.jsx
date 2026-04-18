@@ -1,7 +1,40 @@
 import React from 'react'
 import Courses from './Courses'
+import MiddleTransition from './MiddleTransition'
+import FeaturesTable from './FeaturesTable'
+import Placeent_carousol from './Placeent_carousol'
+import Stories from './Stories'
 const roles = ['software development', 'Data Analyst', 'GenAI']
 const courses = [{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"rofessional Certification in Data Analytics with GenAI", img: "https://files.codingninjas.in/image-639-1771335520.webp" },{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"},{name:"Professional Certification in Data Analytics with GenAI ", img: "https://files.codingninjas.in/image-645-1771335523.webp"}]
+const types = [,'technical', 'non-technical']
+
+const stories = [
+  {
+    img: "https://i.pravatar.cc/150?u=11",
+    name: "Arjun Mehta",
+    story: "The structured curriculum helped me transition from a non-tech background to a SDE role at Amazon within 6 months.",
+    type: "technical"
+  },
+  {
+    img: "https://i.pravatar.cc/150?u=12",
+    name: "Sneha Kapoor",
+    story: "The 1:1 doubt support was a lifesaver. I cleared my concepts and landed a Data Analyst position at Google.",
+    type: "technical"
+  },
+  {
+    img: "https://i.pravatar.cc/150?u=13",
+    name: "Rohan Das",
+    story: "I was struggling with DSA, but the way it was taught here made it so simple. Proud to be a Ninja at Microsoft!",
+    type: "technical"
+  },
+  {
+    img: "https://i.pravatar.cc/150?u=14",
+    name: "Priya Sharma",
+    story: "The placement cell is amazing. They guided me through mock interviews which helped me crack Adobe.",
+    type: "technical"
+  }
+];
+
 function Hero() {
   return (
  <div className='flex flex-col p-3 h-full w-full bg-black '>
@@ -63,6 +96,13 @@ function Hero() {
  
     </div>
     <Courses courses={roles} subcourses={courses}/>
+    <MiddleTransition/>
+    <FeaturesTable/>
+    <Placeent_carousol/>
+    <div className='flex flex-row'>
+
+    <Stories stories={stories} types={types}/>
+    </div>
  </div>
   )
 }

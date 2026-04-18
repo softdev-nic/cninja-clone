@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <>
+    < div className='bg-black'>
       <Navbar />
       <Hero/>
       
@@ -17,7 +17,7 @@ function App() {
       
       
       
-    </>
+    </div>
   )
 }
 

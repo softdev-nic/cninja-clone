@@ -1,0 +1,12 @@
+.why-us :nth-child(1)
+{
+   -webkit-text-stroke: 1px white;
+   font-size: 60px;;
+   font-weight: 400; 
+   line-height: 160px;
+   font-optical-sizing: auto;
+   transform: scale(3);
+   text-shadow: 2px white;
+   
+   
+}
